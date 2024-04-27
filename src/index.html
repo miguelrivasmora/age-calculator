@@ -10,26 +10,28 @@
         <div class="calculator">
             <div class="text-camp">
                 <div class="day-camp">
-                    <label for="" class="labels">DAY</label>
-                    <input type="number" name="day" placeholder="DAY">
+                    <label for="dia" class="labels">DAY</label>
+                    <input type="number" id="diaUsuario" name="day" placeholder="DAY">
                 </div>
 
                 <div class="month-camp">
-                    <label for="" class="labels">MONTH</label>
-                    <input type="text" name="month" placeholder="MONTH">
+                    <label for="mes" class="labels">MONTH</label>
+                    <input type="number" id="mesUsuario" name="month" placeholder="MONTH">
                 </div>
 
                 <div class="year-camp">
-                    <label for="" class="labels">YEAR</label>
-                    <input type="text" name="year" placeholder="YEAR">
+                    <label for="año" class="labels">YEAR</label>
+                    <input type="number" id="añoUsuario" min="1" name="year" placeholder="YEAR">
                 </div>
             </div>
+
             <div class="result">
-                <P class="text-result" class="day-result"><span>--</span>years</P>
-                <p class="text-result" class="month-result"><span>--</span>months</p>
-                <p class="text-result" class="year-result"><span>--</span>days</p>
+                <P class="text-result"><span id="yearresult">--</span>years</P>
+                <p class="text-result"><span id="monthresult">--</span>months</p>
+                <p class="text-result"><span id="dayresult">--</span>days</p>
             </div>
-            <button class="button"><img class="image" src=".\..\assets\images\icon-arrow.svg" alt="button"></button>
+            <button id="miBoton" class="button" onclick="calcularEdadExacta()"><img class="image" src=".\..\assets\images\icon-arrow.svg" alt="button"></button>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
